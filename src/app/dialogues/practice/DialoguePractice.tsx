@@ -1,7 +1,5 @@
 "use client";
 
-
-
 import Navbar from "@/components/Navbar";
 import { useSearchParams } from "next/navigation";
 import { vocabData } from "@/data/vocabData";
