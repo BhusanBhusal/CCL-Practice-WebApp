@@ -7,7 +7,7 @@ import { vocabData } from "@/data/vocabData";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
-export default function VocabPracticePage() {
+export default function VocabPractice() {
   const searchParams = useSearchParams();
   const setKey = searchParams.get("set") || "carerPayment";
   const vocabSet = vocabData[setKey as keyof typeof vocabData];
