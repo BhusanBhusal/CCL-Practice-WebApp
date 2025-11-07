@@ -1,8 +1,6 @@
 "use client";
 
-export const dynamic = "force-dynamic";
-export const fetchCache = "force-no-store";
-export const revalidate = 0;
+
 
 import Navbar from "@/components/Navbar";
 import { useSearchParams } from "next/navigation";
@@ -10,7 +8,7 @@ import { vocabData } from "@/data/vocabData";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { useState } from "react";
 
-export default function DialoguePracticePage() {
+export default function DialoguePractice() {
   const searchParams = useSearchParams();
   const setKey = searchParams.get("set") || "carerPayment";
   const vocabSet = vocabData[setKey as keyof typeof vocabData];
